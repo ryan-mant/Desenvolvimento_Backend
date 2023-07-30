@@ -1,0 +1,15 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="row" *ngFor="let cosmetico of cosmeticos">
+    <div class="card" style="width: 18rem;">
+      <img src="{{cosmetico.imagem}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{cosmetico.nome}}</h5>
+        <p class="card-text">{{cosmetico.descricao}}.</p>
+        <div class="container d-flex align-items-center justify-content-center">
+          <span class="badge badge-success p-2 mr-5">{{cosmetico.preco}}</span>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
